@@ -1,41 +1,76 @@
-# Supply-Chain-forecasting-deep-learning
+<div align="center">
+  <a href="https://www.openboxes.com">
+    <img src="/docs/assets/img/logo-full-rounded.png" alt="OpenBoxes logo">
+  </a>
+  <h4>An accessible, open-source inventory and supply chain management system.</h4>
 
-Problem Statement:
-1. Understanding sales trends to forecast future sales
-2. Inventory Optimization: matching store inventory with actual needs to reduce storage space needed/rental cost
-3. Replenishment Optimization: optimizing replenishment quantity per order to minimize the number of replenishments between warehouse and stores 
-(Warehousing & Transportation Costs)
-4. Finding out factors that affect sales to design and optimize the business model
+  [![status of develop branch](https://github.com/openboxes/openboxes/actions/workflows/on-change.yml/badge.svg)](https://github.com/openboxes/openboxes/actions/workflows/on-change.yml)
+  [![status of documentation build](https://readthedocs.org/projects/openboxes/badge/?version=develop)](https://readthedocs.org/projects/openboxes/?badge=develop)
+  [![status of dbdocs build](https://github.com/openboxes/openboxes/actions/workflows/dbdocs.yml/badge.svg)](https://github.com/openboxes/openboxes/actions/workflows/dbdocs.yml)
+  [![status of docker build](https://github.com/openboxes/openboxes/actions/workflows/docker-image.yml/badge.svg)](https://github.com/openboxes/openboxes/actions/workflows/docker-image.yml)
 
-Comparision between Machine Learning and Deep Learning models:
+  [![User Guide](https://img.shields.io/badge/user%20guide-blue?style=for-the-badge&logo=helpscout&logoColor=white)](https://help.openboxes.com/)
+  [![Install Docs](https://img.shields.io/badge/install%20docs-limegreen?style=for-the-badge&logo=materialformkdocs&logoColor=white)](https://docs.openboxes.com/en/latest/)
+  [![Contributor Guide](https://img.shields.io/badge/contributor%20guide-grey?style=for-the-badge&logo=gitbook&logoColor=white)](https://openboxes.gitbook.io/contributor-guide/)
+  [![Slack](https://img.shields.io/badge/Slack-4A154B?style=for-the-badge&logo=slack&logoColor=white)](http://slack-signup.openboxes.com/)
+  [![Forums](https://img.shields.io/badge/support%20forums-orange?style=for-the-badge&logo=discourse&logoColor=white)](https://community.openboxes.com/)
+</div>
 
-Machine Learning Models used:
-1. Linear Regressor: Model  finds the best fit linear line between dependent and independent variables
-2. XGBoost: Implementation of Gradient Boosted decision trees
+<br>
 
-Deep Learning Models used:
-1. CNN: Feedforward neural network effective in forecasting time series problems
-2. LSTM: It is a form of RNN which overcomes the shortcomings of RNN models
-3. CNN+LSTM: Used to extract the features of the input time data and predict the same for the next day 
-4. GRU: Designed to avoid vanishing gradient problem with fewer parameters.
-5. Transformers: Adopts the mechanism of self-attention, differentially weighting the significance of each part of the input data. 
+## About
+OpenBoxes was initially conceptualized by staff at [Partners In Health](https://www.pih.org/article/need-know-openboxes-and-supply-chain) as a way to digitize the delivery, inventory, and consumption of emergency medical supplies in Haiti in the aftermath of the 2010 earthquake.
 
-Conclusion:
-ML model XGBoost and DL model CNN+LSTM prove to be more accurate in this project.
+Today, OpenBoxes runs in healthcare facilities all over the world, including in Sierra Leone, Lesotho, Rwanda, Liberia, and the United States, providing staff with the tools they need to ensure that lifesaving medication is always available to patients when they need it.
 
-Advantages of XGBoost Model:
-1. Produce reasonable forecasts with no hyperparameter tuning 
-2. Demand for fewer data and fewer features
-3. Explicitly adds a regularization term to the objective function to control the complexity of the model
-4. Prevents overfitting, and improve the generalization ability 
-5. Supports parallel selection of split points, thereby increasing the operating speed
+But OpenBoxes isn't only for global health systems. As an open source project, the OpenBoxes community has helped evolve the application into a robust, general-purpose warehouse management system that services supply chains across a wide array of industries.
 
-Advantages of CNN+LSTM Model
-1. Convolution Layer: The characteristics are derived from the data 
-2. Grouping: Reduces the dimensionality of each feature map but retains the most important information 
-3. Flatten: Converts the data into a 1D matrix to enter it in the next layer. 
-We flatten the output of the Convolutional layers to create a single long feature vector.
-4. Fully Connected: This helps connect each neuron in one layer with each neuron in another layer
+As a community, OpenBoxes strives for:
 
- 
+- 🚀 **Efficiency**: Our mission remains deeply rooted in our origin story. The application should run smoothly, reliably, and affordably in low-resource environments.
 
+- ↪️ **Flexibility**: The application should be adaptable to the everchanging needs of each facility, and flexible enough to apply itself to the unique requirements and structures of vastly different supply chains systems.
+
+- 🤝 **Accessibility**: The application should be intuitive to use, simple to get up and running, and affordable to maintain.
+
+- 🎩 **Sophistication**: We don't want the accessibility of our software to come at the expense of quality. We pride ourselves on open-sourcing a world-class suite of feature-rich tools that you'd normally expect to see only in paid, enterprise tier software.
+
+See [our website](https://openboxes.com/features/) for a list of some of the primary features of the application or check out our [demo site](https://demo.openboxes.com/openboxes/auth/signup) to experiment with the application yourself!
+
+<br>
+
+
+## Quickstart Guide
+See our [local setup instructions](https://openboxes.gitbook.io/contributor-guide/software-development/onboarding/running-openboxes-locally) for a step-by-step guide on how to quickly get an OpenBoxes server running on your local machine.
+
+If you're a system administrator looking to deploy the application to a production server, take a look at our [installation documentation](https://docs.openboxes.com/en/latest/admin-guide/installation/) instead.
+
+<br>
+
+## Support
+Do you need assistance running or using the app? Have you encountered an issue/bug?
+
+See our [support guide](https://github.com/openboxes/.github/blob/main/.github/SUPPORT.md) for more information.
+
+<br>
+
+## Contributing
+Are you looking to help out the project? Please see our [contributor guide](https://openboxes.gitbook.io/contributor-guide/).
+
+This project exists thanks to all the generous people who have contributed their valuable time and effort over the years:
+
+<a href="https://github.com/openboxes/openboxes/graphs/contributors"><img src="https://opencollective.com/openboxes/contributors.svg?width=890&button=false" /></a>
+
+We are incredibly grateful to all the individuals and organizations that [sponsor OpenBoxes with a financial contribution](https://opencollective.com/openboxes/contribute):
+
+<a href="https://opencollective.com/openboxes"><img src="https://opencollective.com/openboxes/individuals.svg?button=false"></a>
+<a href="https://opencollective.com/openboxes"><img src="https://opencollective.com/openboxes/organizations.svg"></a>
+
+<br>
+
+## License
+This project is licensed under the [Eclipse Public License 1.0](https://opensource.org/license/epl-1-0). See the [LICENSE.md](/LICENSE.md) file for a copy of the full license.
+
+By using or contributing to this software in any fashion, you are agreeing to be bound by the terms of this license.
+
+You must not remove this licensing notice or any other notices from this software.
